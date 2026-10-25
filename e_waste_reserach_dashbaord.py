@@ -27,8 +27,6 @@ from sklearn.ensemble import RandomForestRegressor
 from xgboost import XGBRegressor
 
 
-uploaded = files.upload()
-
 df = pd.read_excel("E_Waste_Research_Dataset_Modified.xlsx")
 
 print(df.shape)
