@@ -26,7 +26,7 @@ from sklearn.metrics import (
 from sklearn.ensemble import RandomForestRegressor
 from xgboost import XGBRegressor
 
-from google.colab import files
+
 uploaded = files.upload()
 
 df = pd.read_excel("E_Waste_Research_Dataset_Modified.xlsx")
