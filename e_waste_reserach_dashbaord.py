@@ -10,7 +10,7 @@ Original file is located at
 # ============================================================
 # IMPORT LIBRARIES
 # ============================================================
-
+import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -1376,8 +1376,7 @@ of e-waste generation for the selected city.
 # ============================================================
 # 13. LAUNCH DASHBOARD
 # ============================================================
-
 demo.launch(
-    share=True
+    server_name="0.0.0.0",
+    server_port=int(os.environ.get("PORT", 10000))
 )
-
